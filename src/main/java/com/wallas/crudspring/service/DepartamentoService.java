@@ -1,9 +1,8 @@
 package com.wallas.crudspring.service;
 
-import com.wallas.crudspring.dto.DepartamentoDTO;
+import com.wallas.crudspring.dto.DepartamentoQuantidadeDTO;
 import com.wallas.crudspring.exception.DepartamentoDuplicadoException;
 import com.wallas.crudspring.model.Departamento;
-import com.wallas.crudspring.model.Pessoa;
 import com.wallas.crudspring.repository.DepartamentoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -32,7 +31,7 @@ public class DepartamentoService {
         repository.delete(departamento);
     }
 
-    public List<DepartamentoDTO> obterResumoDepartamentos() {
+    public List<DepartamentoQuantidadeDTO> obterResumoDepartamentos() {
         return repository.countPeopleAndTasksPerDepartment();
     }
 

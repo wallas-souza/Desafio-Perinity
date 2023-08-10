@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/tarefas")
+@RequestMapping("/tarefas")
 public class TarefaController {
 
     private final TarefaService service;

@@ -4,7 +4,6 @@ import com.wallas.crudspring.exception.DepartamentosDiferentesException;
 import com.wallas.crudspring.model.Departamento;
 import com.wallas.crudspring.model.Pessoa;
 import com.wallas.crudspring.model.Tarefa;
-import com.wallas.crudspring.repository.DepartamentoRepository;
 import com.wallas.crudspring.repository.TarefaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

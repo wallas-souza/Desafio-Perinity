@@ -1,6 +1,6 @@
 package com.wallas.crudspring.controller;
 
-import com.wallas.crudspring.dto.DepartamentoDTO;
+import com.wallas.crudspring.dto.DepartamentoQuantidadeDTO;
 import com.wallas.crudspring.model.Departamento;
 import com.wallas.crudspring.service.DepartamentoService;
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/departamentos")
+@RequestMapping("/departamentos")
 public class DepartamentoController {
 
     private final DepartamentoService service;
@@ -24,8 +24,8 @@ public class DepartamentoController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<DepartamentoDTO>> obterResumoDepartamentos() {
-        List<DepartamentoDTO> resumoDepartamentos = service.obterResumoDepartamentos();
+    public ResponseEntity<List<DepartamentoQuantidadeDTO>> obterResumoDepartamentos() {
+        List<DepartamentoQuantidadeDTO> resumoDepartamentos = service.obterResumoDepartamentos();
         return ResponseEntity.ok(resumoDepartamentos);
     }
 

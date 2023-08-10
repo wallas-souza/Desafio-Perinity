@@ -5,7 +5,6 @@ import com.wallas.crudspring.dto.ParametrosEntradaDTO;
 import com.wallas.crudspring.model.Pessoa;
 import com.wallas.crudspring.service.PessoaService;
 import lombok.AllArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -17,7 +16,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/pessoas")
+@RequestMapping("/pessoas")
 public class PessoaController {
 
     private final PessoaService service;
